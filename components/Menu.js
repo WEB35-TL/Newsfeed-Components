@@ -59,6 +59,8 @@ function menuMaker(arr) {
   btn.addEventListener('click', () => {
     // toggle menu opening
     menu.classList.toggle('menu--open')
+
+    // stretch
     gsap.to(menu, {
       duration: 1,
       y: 40,
