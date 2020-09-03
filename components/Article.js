@@ -123,13 +123,11 @@ function articleMaker(arr) {
   // title h2
   const title = document.createElement('h2')
   title.textContent = arr.title
-  // parent.append(title)
 
   // date p
   const date = document.createElement('p')
   date.classList.add('date')
   date.textContent = arr.date
-  // parent.append(date)
 
   // three separate paragraph elements
   const first = document.createElement('p')
