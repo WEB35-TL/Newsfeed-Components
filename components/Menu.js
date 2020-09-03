@@ -59,6 +59,13 @@ function menuMaker(arr) {
   btn.addEventListener('click', () => {
     // toggle menu opening
     menu.classList.toggle('menu--open')
+    gsap.to(menu, {
+      duration: 1,
+      y: 40,
+      scale: 1,
+      ease: 'bounce',
+      opacity: 0.8,
+    })
   })
 
   menu.append(ul)
